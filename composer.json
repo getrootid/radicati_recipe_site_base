@@ -1,0 +1,61 @@
+{
+  "name": "getrootid/radicati-recipe-site-base",
+  "description": "Base Radicati site setup.",
+  "type": "drupal-recipe",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Jason Mickela"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "itsjavi/fontawesome-iconpicker",
+        "version": "master",
+        "type": "drupal-library",
+        "source": {
+          "url": "https://github.com/itsjavi/fontawesome-iconpicker",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
+  ],
+  "require": {
+    "getrootid/radicati_recipe_layout_builder": "*",
+    "getrootid/radicati_recipe_admin": "*",
+    "getrootid/radicati_recipe_content_base": "*",
+    "getrootid/radicati_recipe_people": "*",
+    "getrootid/radicati_recipe_press": "*",
+    "getrootid/radicati_recipe_search": "*",
+    "getrootid/radicati_recipe_blog_basic": "*",
+    "getrootid/radicati_drupal_theme": "*",
+    "drupal/advagg": "*",
+    "drupal/block_visibility_conditions": "*",
+    "drupal/ckeditor_accordion": "*",
+    "drupal/draggableviews": "*",
+    "drupal/dropzonejs": "*",
+    "drupal/easy_breadcrumb": "*",
+    "drupal/editor_advanced_link": "*",
+    "drupal/field_group": "*",
+    "drupal/fontawesome": "*",
+    "drupal/fontawesome_menu_icons": "*",
+    "drupal/mailsystem": "^4.3",
+    "drupal/manage_display": "^3.0",
+    "drupal/menu_link_attributes": "*",
+    "drupal/metatag": "*",
+    "drupal/pantheon_advanced_page_cache": "*",
+    "drupal/pathauto": "*",
+    "drupal/redirect": "*",
+    "drupal/redis": "*",
+    "drupal/search_api": "*",
+    "drupal/superfish": "*",
+    "drupal/twig_tweak": "*",
+    "drupal/viewsreference": "*",
+    "drupal/warmer": "*",
+    "drupal/webform": "*",
+    "itsjavi/fontawesome-iconpicker": "master"
+  }
+}

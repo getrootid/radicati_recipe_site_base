@@ -1,0 +1,54 @@
+name: 'Radicati Site'
+description: 'Full base Radicati site setup.'
+type: 'Content'
+recipes:
+  - radicati-recipe-admin
+  - radicati-recipe-content-base
+  - radicati-recipe-layout-builder
+  - radicati-recipe-people
+  - radicati-recipe-press
+  - radicati-recipe-search
+  - radicati-recipe-blog-basic
+install:
+  - paragraphs
+  - field
+  - field_ui
+  - text
+  - filter
+  - editor
+  - ckeditor5
+  - text_field_formatter
+  - link
+  - options
+  - telephone
+  - entity_reference_revisions
+  - file
+  - field_group
+  - taxonomy
+  - block_visibility_conditions
+  - block_visibility_conditions_node
+  - radicati_drupal_theme
+config:
+  import:
+    field: "*"
+    field_ui: "*"
+    text: "*"
+    text_field_formatter: "*"
+    paragraphs: "*"
+    field_group: "*"
+    taxonomy: "*"
+  actions:
+    system.theme:
+      simple_config_update:
+        default: radicati_drupal_theme
+    block.block.radicati_drupal_theme_page_title:
+      simple_config_update:
+        dependencies:
+          module:
+            - block_visibility_conditions_node
+        visibility:
+          not_node_type:
+            id: not_node_type
+            bundles:
+              landing_page: landing_page
+            negate: null
