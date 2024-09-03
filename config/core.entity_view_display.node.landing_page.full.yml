@@ -59,19 +59,17 @@ third_party_settings:
         - rad_two_column
         - rad_three_column
         - rad_four_column
+        - rad_sticky
       denylisted_blocks: {  }
       allowlisted_blocks:
         core:
           - page_title_block
       restricted_categories:
-        - Devel
         - Help
-        - Superfish
         - System
-        - User
         - radicati
 _core:
-  default_config_hash: TewB8TUO4v614uAFJO28s_Ydtzc2F6sQ-nOkUwzygmA
+  default_config_hash: JGH6fGeeqB2coLG6yb8sEnj0nOuVDk6eA_g0Ba06Tsg
 id: node.landing_page.full
 targetEntityType: node
 bundle: landing_page

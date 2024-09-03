@@ -31,6 +31,7 @@
     "getrootid/radicati-recipe-press": "*",
     "getrootid/radicati-recipe-search": "*",
     "getrootid/radicati-recipe-blog-basic": "*",
+    "getrootid/radicati-recipe-media": "*",
     "getrootid/radicati_drupal_theme": "*",
     "drupal/advagg": "*",
     "drupal/block_visibility_conditions": "*",
