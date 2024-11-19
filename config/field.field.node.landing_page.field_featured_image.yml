@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_featured_image
     - media.type.image
     - node.type.landing_page
+_core:
+  default_config_hash: 4KGwsoPTGH-Pim7YpTb58UFyOByoQ8bqeE7azXVNx28
 id: node.landing_page.field_featured_image
 field_name: field_featured_image
 entity_type: node

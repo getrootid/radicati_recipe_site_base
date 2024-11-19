@@ -51,7 +51,7 @@ third_party_settings:
             additional: {  }
         third_party_settings: {  }
 _core:
-  default_config_hash: 3AFWItNE95cp9tykE9mB8kvKUwbflQRqWS_PvTPqWs8
+  default_config_hash: mB3liGaPtTmUMP6PvmlhLBLouLKwVu2Q8ur6FHwKH7Y
 id: node.landing_page.teaser
 targetEntityType: node
 bundle: landing_page

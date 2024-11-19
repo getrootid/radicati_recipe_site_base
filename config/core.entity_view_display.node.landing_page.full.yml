@@ -57,6 +57,7 @@ third_party_settings:
       allowed_layouts:
         - rad_single_column
         - rad_two_column
+        - rad_stacked_two_column
         - rad_three_column
         - rad_four_column
         - rad_sticky
@@ -69,7 +70,7 @@ third_party_settings:
         - System
         - radicati
 _core:
-  default_config_hash: JGH6fGeeqB2coLG6yb8sEnj0nOuVDk6eA_g0Ba06Tsg
+  default_config_hash: KgdU3Y2qiSzDjmpD2CTyDkYtGPH0MDNazSEndDzmc3g
 id: node.landing_page.full
 targetEntityType: node
 bundle: landing_page

@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_summary
     - node.type.landing_page
+_core:
+  default_config_hash: H081j29sC_YpGcrHr_JX3kMbqrdLQL1UQObVMi_3Dn8
 id: node.landing_page.field_summary
 field_name: field_summary
 entity_type: node

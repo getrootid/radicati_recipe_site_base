@@ -17,10 +17,12 @@ third_party_settings:
     type_description: 'Something or other!'
     existing_nodes_link_text: 'View Landing Pages'
     type_weight: 0
+_core:
+  default_config_hash: XfFOJBwX-3-jdrTt9_R6FScv8jjHTsvhHenGi3Y8D8U
 name: 'Landing Page'
 type: landing_page
 description: 'Pages creating using a component driven layout builder.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

@@ -16,7 +16,7 @@ third_party_settings:
     enabled: false
     allow_custom: false
 _core:
-  default_config_hash: TewB8TUO4v614uAFJO28s_Ydtzc2F6sQ-nOkUwzygmA
+  default_config_hash: qvUSNnM2C65Lplw9okwnqW9mHYggPn7tCsccdUe-q2s
 id: node.landing_page.card_vertical
 targetEntityType: node
 bundle: landing_page
