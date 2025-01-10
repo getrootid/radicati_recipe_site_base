@@ -24,7 +24,7 @@
     }
   ],
   "require": {
-    "composer/installers": "~1.0",
+    "composer/installers": "^2.3.0",
     "getrootid/radicati-recipe-layout-builder": "*",
     "getrootid/radicati-recipe-admin": "*",
     "getrootid/radicati-recipe-content-base": "*",
