@@ -1,0 +1,20 @@
+uuid: deafea16-f82a-400c-abed-6b6c9fd70b23
+langcode: en
+status: true
+dependencies:
+  theme:
+    - radicati_drupal_theme
+id: radicati_drupal_theme_tabs
+theme: radicati_drupal_theme
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

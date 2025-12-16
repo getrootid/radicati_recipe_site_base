@@ -1,0 +1,23 @@
+uuid: cea5d1d4-5242-4560-8645-2df2de1cace8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - radicati_drupal_theme
+id: radicati_drupal_theme_sitebranding
+theme: radicati_drupal_theme
+region: header_branding
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

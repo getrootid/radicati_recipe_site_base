@@ -27,6 +27,7 @@ install:
   - taxonomy
   - block_visibility_conditions
   - block_visibility_conditions_node
+  - superfish
   - radicati_drupal_theme
 config:
   import:
@@ -37,18 +38,8 @@ config:
     paragraphs: "*"
     field_group: "*"
     taxonomy: "*"
+    superfish: "*"
   actions:
     system.theme:
       simple_config_update:
         default: radicati_drupal_theme
-    block.block.radicati_drupal_theme_page_title:
-      simple_config_update:
-        dependencies:
-          module:
-            - block_visibility_conditions_node
-        visibility:
-          not_node_type:
-            id: not_node_type
-            bundles:
-              landing_page: landing_page
-            negate: null

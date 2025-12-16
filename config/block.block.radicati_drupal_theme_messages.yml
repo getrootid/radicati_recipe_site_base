@@ -1,0 +1,28 @@
+uuid: 62eea685-dc4b-4137-b9dc-be97e8ea25ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - radicati_drupal_theme
+id: radicati_drupal_theme_messages
+theme: radicati_drupal_theme
+region: system_help
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

@@ -1,0 +1,20 @@
+uuid: ba106a86-2c6f-49e9-b390-8875820e80a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - radicati_drupal_theme
+id: radicati_drupal_theme_mainpagecontent
+theme: radicati_drupal_theme
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

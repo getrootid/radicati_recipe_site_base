@@ -1,0 +1,25 @@
+uuid: 6ec9bb7e-4718-4496-b88c-3264f2be97d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - radicati_drupal_theme
+id: radicati_drupal_theme_mainnavigation_2
+theme: radicati_drupal_theme
+region: off_canvas
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 3
+  expand_all_items: true
+visibility: {  }
