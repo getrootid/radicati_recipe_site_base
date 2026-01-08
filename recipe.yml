@@ -16,7 +16,6 @@ install:
   - text
   - filter
   - editor
-  - ckeditor5
   - text_field_formatter
   - link
   - options
@@ -24,7 +23,6 @@ install:
   - entity_reference_revisions
   - file
   - field_group
-  - taxonomy
   - block_visibility_conditions
   - block_visibility_conditions_node
   - superfish
@@ -37,7 +35,6 @@ config:
     text_field_formatter: "*"
     paragraphs: "*"
     field_group: "*"
-    taxonomy: "*"
     superfish: "*"
   actions:
     system.theme:
