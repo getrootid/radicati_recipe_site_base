@@ -30,7 +30,7 @@
     "getrootid/radicati-recipe-people": "^2",
     "getrootid/radicati-recipe-press": "^2",
     "getrootid/radicati-recipe-search": "^2",
-    "getrootid/radicati-recipe-blog-basic": "^2",
+    "getrootid/radicati-recipe-blog-basic": "^1",
     "getrootid/radicati-recipe-media": "^2",
     "getrootid/radicati_drupal_theme": "^2",
     "drupal/block_visibility_conditions": "*",
