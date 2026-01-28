@@ -6,6 +6,8 @@ dependencies:
     - system
   theme:
     - radicati_drupal_theme
+_core:
+  default_config_hash: H3HPgLySAa6HAj9tZij673t7zSVMxRRZK-G8L-wWh48
 id: radicati_drupal_theme_mainpagecontent
 theme: radicati_drupal_theme
 region: content

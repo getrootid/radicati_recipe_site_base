@@ -16,7 +16,7 @@ third_party_settings:
     enabled: false
     allow_custom: false
 _core:
-  default_config_hash: AQ7lNoW6KmKu5mlWhji373S25Bqluao_o8xHEHXL_ic
+  default_config_hash: il22d6mNxER148m3Ow-89stxZLjtdQ_fV5CyQFCBgP8
 id: node.landing_page.card_horizontal
 targetEntityType: node
 bundle: landing_page
@@ -49,6 +49,7 @@ content:
     region: content
 hidden:
   created: true
+  langcode: true
   layout_builder__layout: true
   links: true
   rad_jumpmenu: true

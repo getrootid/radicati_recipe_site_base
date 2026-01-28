@@ -1,28 +1,22 @@
-uuid: 62eea685-dc4b-4137-b9dc-be97e8ea25ac
+uuid: 0a428967-7ffe-4741-8d6a-af0b72c44987
 langcode: en
 status: true
 dependencies:
   module:
     - system
-    - user
   theme:
     - radicati_drupal_theme
+_core:
+  default_config_hash: aeqlWs7HwctZeZC7ADcbxfqehJzBRfZKmuZz3DsH3_4
 id: radicati_drupal_theme_messages
 theme: radicati_drupal_theme
-region: system_help
+region: site_notification
 weight: 0
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: Messages
+  label: 'Status messages'
   label_display: '0'
   provider: system
-visibility:
-  user_role:
-    id: user_role
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
-    roles:
-      authenticated: authenticated
+visibility: {  }

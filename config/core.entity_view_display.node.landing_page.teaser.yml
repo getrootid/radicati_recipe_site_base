@@ -10,72 +10,67 @@ dependencies:
     - node.type.landing_page
   module:
     - layout_builder
-    - layout_discovery
-    - manage_display
+    - layout_builder_restrictions
+    - nomarkup
 third_party_settings:
   layout_builder:
-    enabled: true
+    enabled: false
     allow_custom: false
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          38a0b888-39c9-4bf0-9b91-acfc1300f682:
-            uuid: 38a0b888-39c9-4bf0-9b91-acfc1300f682
-            region: content
-            configuration:
-              id: 'extra_field_block:node:landing_page:links'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 0
-            additional: {  }
-          5354a126-2798-44ff-aae6-036b7138d4fd:
-            uuid: 5354a126-2798-44ff-aae6-036b7138d4fd
-            region: content
-            configuration:
-              id: 'field_block:node:landing_page:title'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: title
-                label: hidden
-                settings:
-                  link_to_entity: true
-                  tag: h2
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts: {  }
+      denylisted_blocks: {  }
+      allowlisted_blocks: {  }
+      restricted_categories: {  }
 _core:
-  default_config_hash: mB3liGaPtTmUMP6PvmlhLBLouLKwVu2Q8ur6FHwKH7Y
+  default_config_hash: _WPAoWcc11d2Z45r-5Uhs2mzATN5BGrFqy4XkUFeCo8
 id: node.landing_page.teaser
 targetEntityType: node
 bundle: landing_page
 mode: teaser
 content:
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
-  title:
-    type: title
+  field_featured_image:
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link_to_entity: true
-      tag: h2
-    third_party_settings: {  }
-    weight: -49
+      view_mode: 1_1_half_width
+      link: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: '1'
+    weight: 0
+    region: content
+  field_summary:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 2
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
     region: content
 hidden:
   created: true
-  field_featured_image: true
-  field_summary: true
+  langcode: true
   layout_builder__layout: true
+  links: true
   rad_jumpmenu: true
   search_api_excerpt: true
   uid: true

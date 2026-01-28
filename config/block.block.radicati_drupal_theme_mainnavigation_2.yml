@@ -8,6 +8,8 @@ dependencies:
     - system
   theme:
     - radicati_drupal_theme
+_core:
+  default_config_hash: afDKiHAUZuQuARnAKsfqPxQzdQabkXwJSgA5__1QuZU
 id: radicati_drupal_theme_mainnavigation_2
 theme: radicati_drupal_theme
 region: off_canvas

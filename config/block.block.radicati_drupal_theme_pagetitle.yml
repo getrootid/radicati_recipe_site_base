@@ -4,6 +4,8 @@ status: true
 dependencies:
   theme:
     - radicati_drupal_theme
+_core:
+  default_config_hash: WUYTgOGgTRs4dXhltHZhd9JMKZpHkDCzJJY0BxETw3Y
 id: radicati_drupal_theme_pagetitle
 theme: radicati_drupal_theme
 region: page_title

@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.card_horizontal
+    - node.type.landing_page
+    - node.type.post
   module:
     - node
     - user
 _core:
-  default_config_hash: sW3vEuiCMn7snQxN8E-qPyqJ--GJBMrPlo6XRVFXSMk
+  default_config_hash: QWHs1kSICh4g_iCYRik4UjbHPN1zLFC2CpTphzySd4E
 id: radicati_default_listing_views
 label: 'Radicati: Default Listing Views'
 module: views
@@ -72,15 +74,18 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: mini
+        type: full
         options:
           offset: 0
+          pagination_heading_level: h4
           items_per_page: 10
           total_pages: null
           id: 0
           tags:
             next: ››
             previous: ‹‹
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -89,7 +94,7 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          pagination_heading_level: h4
+          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -140,17 +145,55 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            landing_page: landing_page
+            post: post
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
-        type: grid
+        type: default
         options:
+          row_class: ''
+          default_row_class: false
           uses_fields: false
-          columns: 2
-          automatic_width: true
-          alignment: horizontal
-          row_class_custom: ''
-          row_class_default: true
-          col_class_custom: ''
-          col_class_default: true
       row:
         type: 'entity:node'
         options:
@@ -177,16 +220,14 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  block_1:
-    id: block_1
-    display_title: Block
-    display_plugin: block
-    position: 3
+  example:
+    id: example
+    display_title: 'Example Listing'
+    display_plugin: embed
+    position: 2
     display_options:
-      display_extenders:
-        metatag_display_extender:
-          metatags: {  }
-          tokenize: false
+      display_description: ''
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:

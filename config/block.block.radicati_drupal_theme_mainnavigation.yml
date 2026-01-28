@@ -8,6 +8,8 @@ dependencies:
     - superfish
   theme:
     - radicati_drupal_theme
+_core:
+  default_config_hash: hao8aAucGdhifMT-YzMHT1GQKonKCQTqYrutclWsGHI
 id: radicati_drupal_theme_mainnavigation
 theme: radicati_drupal_theme
 region: primary_navigation

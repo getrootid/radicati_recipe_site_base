@@ -6,6 +6,8 @@ dependencies:
     - system
   theme:
     - radicati_drupal_theme
+_core:
+  default_config_hash: z-efvV8iucerX4PJU9DPVPQ6mn1Mq7WCEleZZBbMbr8
 id: radicati_drupal_theme_sitebranding
 theme: radicati_drupal_theme
 region: header_branding
