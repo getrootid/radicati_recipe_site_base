@@ -33,7 +33,6 @@
     "getrootid/radicati-recipe-blog-basic": "*",
     "getrootid/radicati-recipe-media": "*",
     "getrootid/radicati_drupal_theme": "*",
-    "drupal/advagg": "*",
     "drupal/block_visibility_conditions": "*",
     "drupal/ckeditor_accordion": "*",
     "drupal/draggableviews": "*",
